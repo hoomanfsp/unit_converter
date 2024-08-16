@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lenght Converter</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Bricolage Grotesque', sans-serif;
+    }
+    h1 {
+      font-size: 5em;
+      font-weight: bold;
+      text-align: center;
+      margin: .5em 0;
+      line-height: .8;
+    }
+    .container {
+      margin: auto;
+      min-height: 100vh;
+      background-color: #202020;
+      padding: 2em 0;
+      color: #040203;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .currency-container {
+      height: fit-content;
+      background-color: #7cb889;
+      padding: 3em;
+      border-radius: 40px;
+    }
+    .input-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    label {
+      font-size: 1.5em;
+      margin-bottom: .4em;
+    }
+    #amount {
+      width: 300px;
+      padding: 20px;
+      border-radius: 30px;
+      font-size: 3em;
+      border: 3px solid black;
+      background: transparent;
+      color: black;
+    }
+    #amount:focus {
+      border: 3px solid white;
+      outline: none;
+    }
+    ::placeholder {
+      color: rgba(0,0,0,0.6);
+      opacity: 1;
+    }
+    .currency {
+      margin-top: 50px;
+      padding: 20px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .select-option {
+      font-size: 16px;
+      color: #333;
+      padding: 20px;
+      display: block;
+      font-weight: 700;
+      line-height: 1.3;
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      outline: none;
+      border-radius: 20px;
+      border: 3px solid black;
+    }
+    button {
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      border-radius: 30px;
+      border: none;
+      font-size: 1.5em;
+      align-items: center;
+      background-color: black;
+      color: #fff;
+      margin-top: 30px;
+    }
+    .result {
+      color: black;
+      font-size: 2.5em;
+    }
+    .error {
+      color: #800020;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="currency-container">
+      <h1>Weight Converter</h1>
+      <form action="/resault" method="POST">
+        <div class="input-box">
+          <label for="amount">Enter amount</label>
+          <input type="text" id="amount" name="amount" placeholder="100" required/>
+        </div>
+        <div class="currency">
+          <div class="box">
+            <select class="select-option" name="fromUnit" id="fromCurrency">
+              <option value="meter">meter</option>
+              <option value="kilometer">kilometer</option>
+              <option value="yard">yard</option>
+              <option value="foot">foot</option>
+              <option value="centimeter">centimeter</option>
+              <option value="millimeter">millimeter</option>
+              <option value="mile">mile</option>
+              <option value="inch">inch</option>
+            </select>
+          </div>
+          <div>
+            <span>TO</span>
+          </div>
+          <div class="box">
+            <select class="select-option" name="toUnit" id="toCurrency">
+              <option value="meter">meter</option>
+              <option value="kilometer">kilometer</option>
+              <option value="yard">yard</option>
+              <option value="foot">foot</option>
+              <option value="centimeter">centimeter</option>
+              <option value="millimeter">millimeter</option>
+              <option value="mile">mile</option>
+              <option value="inch">inch</option>
+            </select>
+          </div>
+          <button type="submit">Convert</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

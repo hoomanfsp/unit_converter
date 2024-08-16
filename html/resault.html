@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversion Result</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Bricolage Grotesque', sans-serif;
+    }
+    h1 {
+      font-size: 5em;
+      font-weight: bold;
+      text-align: center;
+      margin: .5em 0;
+      line-height: .8;
+    }
+    .container {
+      margin: auto;
+      min-height: 100vh;
+      background-color: #202020;
+      padding: 2em 0;
+      color: #040203;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .result-container {
+      height: fit-content;
+      background-color: #7cb889;
+      padding: 3em;
+      border-radius: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5em;
+    }
+    .result-text {
+      font-size: 3em;
+      color: black;
+    }
+    .calculated-amount {
+      font-size: 4em;
+      font-weight: bold;
+      color: black;
+    }
+    .back-button {
+      margin-top: 2em;
+      padding: 1em 2em;
+      font-size: 2em;
+      font-weight: bold;
+      color: black;
+      background-color: #7cb889;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .back-button:hover {
+      background-color: #69a070;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="result-container">
+      <h1>Your Result</h1>
+      <p class="calculated-amount">{{.resault}}</p>
+      <a href="/" class="back-button">Back to Menu</a>
+    </div>
+  </div>
+</body>
+</html>

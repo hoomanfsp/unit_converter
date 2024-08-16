@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversion Tool</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Bricolage Grotesque', sans-serif;
+    }
+    h1 {
+      font-size: 5em;
+      font-weight: bold;
+      text-align: center;
+      margin: .5em 0;
+      line-height: .8;
+    }
+    .container {
+      margin: auto;
+      min-height: 100vh;
+      background-color: #202020;
+      padding: 2em 0;
+      color: #040203;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .main-container {
+      height: fit-content;
+      background-color: #7cb889;
+      padding: 3em;
+      border-radius: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2em;
+    }
+    .main-button {
+      width: 100%;
+      max-width: 300px;
+      padding: 20px;
+      border-radius: 30px;
+      border: none;
+      font-size: 2em;
+      align-items: center;
+      background-color: black;
+      color: #fff;
+      cursor: pointer;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+    .main-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="main-container">
+      <h1>Conversion Tools</h1>
+      <button class="main-button" onclick="location.href='/weight'">Weight</button>
+      <button class="main-button" onclick="location.href='/length'">Length</button>
+      <button class="main-button" onclick="location.href='/temperature'">Temperature</button>
+    </div>
+  </div>
+</body>
+</html>
